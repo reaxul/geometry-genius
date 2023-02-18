@@ -13,19 +13,119 @@
 </head>
 
 <body class="m-8">
-<header>
-    <nav class="bg-green-100 flex place-content-between items-center lg:px-5 rounded">
-        <div>
-            <p class="font-bold text-3xl">Interactive</p>
-            <p class="font-medium text-2xl text-gray-600">Geometry Genius</p>
-    
-        </div>
-        <div>
-            <button type="button" class="bg-blue-600 text-white px-2 rounded font-normal">Blog</button>
-        </div>
-    </nav>
-</header>
+    <header>
+        <nav class="bg-green-100 flex place-content-between items-center lg:px-5 rounded-lg mb-8 p-3">
+            <div>
+                <p class="font-bold text-3xl">Interactive</p>
+                <p class="font-medium text-2xl text-gray-600">Geometry Genius</p>
 
+            </div>
+            <div>
+                <button type="button" class="bg-blue-600 text-white px-3 py-1 rounded font-normal">Blog</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-3">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md: col-span-9">
+                <div class="border-gray-200 border p-8 rounded">
+                    <img class="h-32 m-auto" src="images/triangle.png" alt="">
+                    <div class="description text-center mt-5">
+                        <h3 class="font-medium">
+                            Triangle
+                        </h3>
+                        <small>
+                            Area (A) = 0.5 × b × h
+                        </small>
+                       <div class="flex w-2.5 m-4">
+                        <input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id=""> <small> cm </small><input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id=""><small> cm</small>
+                       </div>
+                       <button class="bg-blue-600 text-white py-1 rounded font-medium w-full">Calculate</button>
+                    </div>
+                </div>
+                <div class="border-gray-200 border p-8 rounded">
+                    <img class="h-32 m-auto" src="images/rectangle.png" alt="">
+                    <div class="description text-center mt-5">
+                        <h3 class="font-medium">
+                            Rectangle
+                        </h3>
+                        <small>
+                            Area (A) = W × I
+                        </small>
+                       <div class="flex w-2.5 m-4">
+                        <input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id=""> <small> cm </small><input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id=""><small> cm</small>
+                       </div>
+                       <button class="bg-blue-600 text-white py-1 rounded font-medium w-full">Calculate</button>
+                    </div>
+                </div>
+                <div class="border-gray-200 border p-8 rounded">
+                    <img class="h-32 m-auto" src="images/parallelogram.png" alt="">
+                    <div class="description text-center mt-5">
+                        <h3 class="font-medium">
+                            Parallelogram
+                        </h3>
+                        <small>
+                            Area (A) = b × h
+                        </small>
+                       <div class="flex w-2.5 m-4">
+                        <input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id=""> <small> cm </small><input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id=""><small> cm</small>
+                       </div>
+                       <button class="bg-blue-600 text-white py-1 rounded font-medium w-full">Calculate</button>
+                    </div>
+                </div>
+                <div class="border-gray-200 border p-8 rounded">
+                    <img class="h-32 m-auto" src="images/rhombus.png" alt="">
+                    <div class="description text-center mt-5">
+                        <h3 class="font-medium">
+                            Rhombus
+                        </h3>
+                        <small>
+                            Area (A) = 0.5 × d<sub>1</sub> × d<sub>2</sub>
+                        </small>
+                       <div class="flex w-2.5 m-4">
+                        <input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id=""> <small> cm </small><input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id=""><small> cm</small>
+                       </div>
+                       <button class="bg-blue-600 text-white py-1 rounded font-medium w-full">Calculate</button>
+                    </div>
+                </div>
+                <div class="border-gray-200 border p-8 rounded">
+                    <img class="h-32 m-auto" src="images/pentagon.png" alt="">
+                    <div class="description text-center mt-5">
+                        <h3 class="font-medium">
+                            Pentagon
+                        </h3>
+                        <small>
+                            Area (A) = 0.5 × p × b
+                        </small>
+                       <div class="flex w-2.5 m-4">
+                        <input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id=""> <small> cm </small><input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id=""><small> cm</small>
+                       </div>
+                       <button class="bg-blue-600 text-white py-1 rounded font-medium w-full">Calculate</button>
+                    </div>
+                </div>
+                <div class="border-gray-200 border p-8 rounded">
+                    <img class="h-32 m-auto" src="images/ellipse.png" alt="">
+                    <div class="description text-center mt-5">
+                        <h3 class="font-medium">
+                            Ellipse
+                        </h3>
+                        <small>
+                            Area (A) = &pi;ab
+                        </small>
+                       <div class="flex w-2.5 m-4">
+                        <input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id=""> <small> cm </small><input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id=""><small> cm</small>
+                       </div>
+                       <button class="bg-blue-600 text-white py-1 rounded font-medium w-full">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-span-3">
+                <div class="border-gray-200 border p-8 rounded">
+                    <p class="text-center underline font-medium">Area Calculation</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
     <script src="index.html"></script>
