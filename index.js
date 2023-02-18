@@ -1,27 +1,14 @@
-function calculate(firstInputId,secondInputId){
-    const firstInputField = document.getElementById(firstInputId)
-    const firstInputString=firstInputField.value;
-    const firstInput=parseInt(firstInputString);
-    const secondInputField=document.getElementById(secondInputId)
-    const secondInputString=secondInputField.value;
-    const secondInput=parseInt(secondInputString);
-    if(isNaN(firstInput,secondInput)){
-        alert('Input is empty, insert a number')
-    }
-    else if(firstInput<=0||secondInput<=0){
-        alert('input a valid number')
-    }
-    else{
-        const sum=firstInput*secondInput;
-        return sum;
-    }
-    
-}
 
 
+
+
+
+// triangle area
 document.getElementById('triangle-btn').addEventListener('click',function(){
-let sum=calculate('t1','t2');
-console.log(sum);
+let triangleArea=0.5 * calculate('t1','t2');
+setResult(triangleArea);
+
+
 })
 
 

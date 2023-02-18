@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
+
 <body>
-    <div class="grid grid-cols-4 md:grid-cols-8 gap-4">
-        <div class="col-span-2 row-span-2 bg-gray-100">1</div>
-        <div class="col-span-2 bg-gray-100">2</div>
-        <div class="col-span-2 bg-gray-100">3</div>
-        <div class="col-span-2 bg-gray-100">4</div>
-        <div class="col-span-2 bg-gray-100">5</div>
-        <div class="col-span-2 bg-gray-100">6</div>
-        <div class="col-span-2 bg-gray-100">7</div>
-        <div class="col-span-2 bg-gray-100">8</div>
-      </div>
-      
+    <div class="text-center">
+        <ol type="1">
+            <li>hi</li>
+            <li>bye</li>
+            <li>hello</li>
+        </ol>
+    </div>
+    <div class="flex justify-between">
+        <div>
+            Triangle
+        </div>
+        <div>
+            ${area}<small>cm<sup>2</sup></small>
+        </div>
+        <div>
+            <button class="bg-blue-600 text-white rounded font-medium px-2" id="ellipse-btn">
+                <small>Convert to m<sup>2</sup></small>
+            </button>
+        </div>
+    </div>
 </body>
+
 </html>
