@@ -43,3 +43,20 @@ function setResult(areaResult,areaName){
     
     ul.appendChild(li)
 }
+
+// Random color generator
+const defaultColor = "#f1f1f1"; 
+const carts = document.querySelectorAll(".p-8");
+carts.forEach(cart => {
+  cart.addEventListener("mouseover", () => {
+    const red = Math.floor(Math.random() * 256);
+    const green = Math.floor(Math.random() * 256);
+    const blue = Math.floor(Math.random() * 256);
+    cart.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+  });
+
+  cart.addEventListener("mouseout", () => {
+    cart.style.backgroundColor = defaultColor;
+  });
+});
+

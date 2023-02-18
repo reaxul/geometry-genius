@@ -40,4 +40,8 @@ document.getElementById('ellipse-btn').addEventListener('click',function(){
     setResult(ellipseArea,'Ellipse');
 })
 
+// blog button 
+document.getElementById('blog-btn').addEventListener('click',function(){
+    window.location.href='blog.html'
+})
 

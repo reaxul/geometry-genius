@@ -20,13 +20,13 @@
 
             </div>
             <div>
-                <button type="button" class="bg-blue-600 text-white px-3 py-1 rounded font-normal">Blog</button>
+                <button id="blog-btn" type="button" class="bg-blue-600 text-white px-3 py-1 rounded font-normal">Blog</button>
             </div>
         </nav>
     </header>
     <main>
         <section class="grid grid-cols-1 md:grid-cols-12 gap-3">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md: col-span-9">
+            <div id="cart" onmouseover="changeColor()" onmouseout="setDefaultColor()" class="grid grid-cols-1 md:grid-cols-3 gap-3 md: col-span-9">
                 <div class="border-gray-200 border p-8 rounded">
                     <img class="h-32 m-auto" src="images/triangle.png" alt="">
                     <div class="description text-center mt-5">
@@ -37,8 +37,8 @@
                             Area (A) = 0.5 × b × h
                         </small>
                         <div class="flex w-2.5 m-4">
-                            <input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="t1"> <small> cm
-                            </small><input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="t2"><small>
+                            <input placeholder="b" class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="t1"> <small> cm
+                            </small><input placeholder="h" class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="t2"><small>
                                 cm</small>
                         </div>
                         <button class="bg-blue-600 text-white py-1 rounded font-medium w-full calulate-btn "
@@ -55,8 +55,8 @@
                             Area (A) = W × I
                         </small>
                         <div class="flex w-2.5 m-4">
-                            <input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="r1"> <small> cm
-                            </small><input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="r2"><small>
+                            <input placeholder="w" class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="r1"> <small> cm
+                            </small><input placeholder="I" class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="r2"><small>
                                 cm</small>
                         </div>
                         <button class="bg-blue-600 text-white py-1 rounded font-medium w-full"
@@ -73,8 +73,8 @@
                             Area (A) = b × h
                         </small>
                         <div class="flex w-2.5 m-4">
-                            <input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="p1"> <small> cm
-                            </small><input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="p2"><small>
+                            <input placeholder="b" class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="p1"> <small> cm
+                            </small><input placeholder="h" class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="p2"><small>
                                 cm</small>
                         </div>
                         <button class="bg-blue-600 text-white py-1 rounded font-medium w-full"
@@ -91,8 +91,8 @@
                             Area (A) = 0.5 × d<sub>1</sub> × d<sub>2</sub>
                         </small>
                         <div class="flex w-2.5 m-4">
-                            <input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="rm1"> <small> cm
-                            </small><input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="rm2"><small>
+                            <input placeholder="d1" class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="rm1"> <small> cm
+                            </small><input placeholder="d2" class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="rm2"><small>
                                 cm</small>
                         </div>
                         <button class="bg-blue-600 text-white py-1 rounded font-medium w-full"
@@ -109,8 +109,8 @@
                             Area (A) = 0.5 × p × b
                         </small>
                         <div class="flex w-2.5 m-4">
-                            <input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="pt1"> <small> cm
-                            </small><input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="pt2"><small>
+                            <input placeholder="p" class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="pt1"> <small> cm
+                            </small><input placeholder="b" class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="pt2"><small>
                                 cm</small>
                         </div>
                         <button class="bg-blue-600 text-white py-1 rounded font-medium w-full"
@@ -127,8 +127,8 @@
                             Area (A) = &pi;ab
                         </small>
                         <div class="flex w-2.5 m-4">
-                            <input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="e1"> <small> cm
-                            </small><input class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="e2"><small>
+                            <input placeholder="a" class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="e1"> <small> cm
+                            </small><input placeholder="b" class="w-20 bg-gray-200 rounded pl-2" type="number" name="" id="e2"><small>
                                 cm</small>
                         </div>
                         <button class="bg-blue-600 text-white py-1 rounded font-medium w-full"
