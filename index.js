@@ -5,11 +5,18 @@ function calculate(firstInputId,secondInputId){
     const secondInputField=document.getElementById(secondInputId)
     const secondInputString=secondInputField.value;
     const secondInput=parseInt(secondInputString);
-    const sum=firstInput*secondInput;
-    return sum;
+    if(isNaN(firstInput,secondInput)){
+        alert('Input is empty, insert a number')
+    }
+    else if(firstInput<=0||secondInput<=0){
+        alert('input a valid number')
+    }
+    else{
+        const sum=firstInput*secondInput;
+        return sum;
+    }
+    
 }
-
-
 
 
 document.getElementById('triangle-btn').addEventListener('click',function(){
